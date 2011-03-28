@@ -21,7 +21,7 @@ namespace CosmicCurling
         SpriteBatch spriteBatch;
 
 
-
+        ScreenManager screenManager;
 
 
 
@@ -36,6 +36,10 @@ namespace CosmicCurling
 
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
+
+
+          
+
         }
 
 
@@ -45,6 +49,7 @@ namespace CosmicCurling
         {
             // TODO: Add your initialization logic here
 
+            
             base.Initialize();
         }
 
@@ -55,7 +60,11 @@ namespace CosmicCurling
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            screenManager = new ScreenManager(this, spriteBatch);
+            Components.Add(screenManager);
+
+            base.LoadContent();
+
         }
 
  
@@ -89,11 +98,19 @@ namespace CosmicCurling
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             // TODO: Add your drawing code here
 
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend);
+
+
+            /// base.Draw should draw anythin tahts in the draw method of DrawableGameCompnent 
             base.Draw(gameTime);
+
+
+            spriteBatch.End();
+
         }
 
 
