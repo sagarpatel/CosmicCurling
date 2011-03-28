@@ -37,8 +37,8 @@ namespace CosmicCurling
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 
-
-          
+            
+            
 
         }
 
@@ -48,8 +48,11 @@ namespace CosmicCurling
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
+            screenManager = new ScreenManager(this, spriteBatch);
+            Components.Add(screenManager);
+
             base.Initialize();
         }
 
@@ -57,11 +60,7 @@ namespace CosmicCurling
 
         protected override void LoadContent()
         {
-            // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-
-            screenManager = new ScreenManager(this, spriteBatch);
-            Components.Add(screenManager);
+                
 
             base.LoadContent();
 

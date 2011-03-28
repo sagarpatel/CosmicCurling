@@ -36,12 +36,12 @@ namespace CosmicCurling
             base.Initialize();
         }
 
-        public virtual void LoadContent()
+        protected override void LoadContent() 
         {
             base.LoadContent();
         }
 
-        public virtual void UnloadContent()
+        protected virtual void UnloadContent()
         {
             base.UnloadContent();
         }

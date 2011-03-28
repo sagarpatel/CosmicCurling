@@ -25,12 +25,12 @@ namespace CosmicCurling
 
         public MainMenu(Game game, SpriteBatch spriteB):base(game,spriteB)
         {
-            
 
+            int b = 8;
         }
 
 
-         public override void LoadContent()
+        protected override void LoadContent()
         {
             testex = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
             
@@ -44,9 +44,9 @@ namespace CosmicCurling
         {
             if (isLoaded)
             {//testing new olor
-                int x = spriteBatch.GraphicsDevice.Viewport.Height;
-                x = testex.Height;
-
+                //int x = spriteBatch.GraphicsDevice.Viewport.Height;
+                //x = testex.Height;
+                
                 spriteBatch.Draw(testex, new Vector2(0, 0), Color.White);
 
                 base.Draw(gameTime);

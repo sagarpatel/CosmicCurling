@@ -15,7 +15,7 @@ namespace CosmicCurling
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>
-    public class ScreenManager : Microsoft.Xna.Framework.DrawableGameComponent
+    public class ScreenManager : Microsoft.Xna.Framework.GameComponent
     {
 
 
@@ -29,18 +29,12 @@ namespace CosmicCurling
             // TODO: Construct any child components here
 
             mainMenu = new MainMenu(game,spriteBatch);
-            mainMenu.LoadContent();
+          //  mainMenu.LoadContent();
             game.Components.Add(mainMenu);
 
         }
 
 
-        protected override void LoadContent()
-        {
-
-            base.LoadContent();
-
-        }
 
 
 
