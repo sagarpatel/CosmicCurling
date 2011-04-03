@@ -24,7 +24,7 @@ namespace CosmicCurling
         ScreenManager screenManager;
 
 
-
+        PlayerObject player1;
 
 
 
@@ -51,7 +51,10 @@ namespace CosmicCurling
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             screenManager = new ScreenManager(this, spriteBatch);
+            player1 = new PlayerObject(this, spriteBatch);
+
             Components.Add(screenManager);
+            Components.Add(player1);
 
             base.Initialize();
         }

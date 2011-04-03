@@ -47,7 +47,7 @@ namespace CosmicCurling
                 //int x = spriteBatch.GraphicsDevice.Viewport.Height;
                 //x = testex.Height;
                 
-                spriteBatch.Draw(testex, new Vector2(0, 0), Color.White);
+                spriteBatch.Draw(testex, new Vector2(100, 100), Color.White);
 
                 base.Draw(gameTime);
             }
