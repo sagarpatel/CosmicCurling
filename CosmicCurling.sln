@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmicCurling", "CosmicCurling\CosmicCurling\CosmicCurling.csproj", "{C651CD92-51FA-40C4-AC8E-87EF2905D829}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "CosmicCurlingContent", "CosmicCurling\CosmicCurlingContent\CosmicCurlingContent.contentproj", "{AFDA7AA5-364C-405F-9519-3342C8BA0EA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmicCurlingContent", "CosmicCurling\CosmicCurlingContent\CosmicCurlingContent.contentproj", "{AFDA7AA5-364C-405F-9519-3342C8BA0EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Farseer Physics XNA WP7", "Farseer Physics Engine 3.3 XNA\Farseer Physics XNA WP7.csproj", "{AA6CB78E-9484-4843-8613-54CD2BF1E948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{C651CD92-51FA-40C4-AC8E-87EF2905D829}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
 		{AFDA7AA5-364C-405F-9519-3342C8BA0EA2}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
 		{AFDA7AA5-364C-405F-9519-3342C8BA0EA2}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{AA6CB78E-9484-4843-8613-54CD2BF1E948}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{AA6CB78E-9484-4843-8613-54CD2BF1E948}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{AA6CB78E-9484-4843-8613-54CD2BF1E948}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{AA6CB78E-9484-4843-8613-54CD2BF1E948}.Release|Windows Phone.Build.0 = Release|Windows Phone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
