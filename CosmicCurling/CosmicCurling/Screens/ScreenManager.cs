@@ -20,6 +20,7 @@ namespace CosmicCurling
 
 
         MainMenu mainMenu;
+        Level1 level1Screen;
 
 
 
@@ -29,8 +30,12 @@ namespace CosmicCurling
             // TODO: Construct any child components here
 
             mainMenu = new MainMenu(game,spriteBatch);
+            level1Screen = new Level1(game, spriteBatch);
           //  mainMenu.LoadContent();
             game.Components.Add(mainMenu);
+            game.Components.Add(level1Screen);
+
+            game.Components.Remove(level1Screen);
 
         }
 

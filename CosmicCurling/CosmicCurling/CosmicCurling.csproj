@@ -87,6 +87,8 @@
   <ItemGroup>
     <Compile Include="GameObject.cs" />
     <Compile Include="InputManager.cs" />
+    <Compile Include="Screens\GamePlayerScreenAbstract.cs" />
+    <Compile Include="Screens\Level1.cs" />
     <Compile Include="Screens\MainMenu.cs" />
     <Compile Include="PlayerObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

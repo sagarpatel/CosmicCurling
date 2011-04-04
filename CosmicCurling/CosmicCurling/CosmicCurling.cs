@@ -10,6 +10,8 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
+using FarseerPhysics.Dynamics;
+
 namespace CosmicCurling
 {
 
@@ -19,14 +21,15 @@ namespace CosmicCurling
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        
 
         ScreenManager screenManager;
-
-
+  
         PlayerObject player1;
 
+        public const float MeterInPixels = 100f;
 
+        public World myWorld;
 
 
         public CosmicCurling()
@@ -37,8 +40,10 @@ namespace CosmicCurling
             // Frame rate is 30 fps by default for Windows Phone.
             TargetElapsedTime = TimeSpan.FromTicks(333333);
 
-            
-            
+            graphics.PreferredBackBufferWidth = 480;
+            graphics.PreferredBackBufferHeight = 800;
+
+            myWorld = new World(new Vector2(0, 10));
 
         }
 
@@ -51,10 +56,13 @@ namespace CosmicCurling
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             screenManager = new ScreenManager(this, spriteBatch);
-            player1 = new PlayerObject(this, spriteBatch);
+
+
+            player1 = new PlayerObject(this, spriteBatch, myWorld);
 
             Components.Add(screenManager);
             Components.Add(player1);
+            
 
             base.Initialize();
         }
@@ -85,11 +93,17 @@ namespace CosmicCurling
         {
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
-
-           
+            {
 
 
+                
+
+                // this.Exit();
+
+            }
+
+
+            myWorld.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
 
             base.Update(gameTime);
         }

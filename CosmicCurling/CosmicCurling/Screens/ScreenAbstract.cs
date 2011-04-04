@@ -21,9 +21,9 @@ namespace CosmicCurling
 
         protected SpriteBatch spriteBatch;
 
-        public ScreenAbstract(Game game, SpriteBatch spriteB):base(game)
+        public ScreenAbstract(Game game, SpriteBatch sB):base(game)
         {
-            spriteBatch = spriteB;
+            spriteBatch = sB;
             isActive = false;
             isLoaded = false;
 

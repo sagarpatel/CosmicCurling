@@ -10,6 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
+using FarseerPhysics.Dynamics;
+using FarseerPhysics.Factories;
+
 
 
 
@@ -20,16 +23,49 @@ namespace CosmicCurling
 
     public class PlayerObject:GameObject
     {
-        public PlayerObject(Game game, SpriteBatch sB):base(game,sB)
+
+        public Body circleBody;
+
+         float PixelsPerMeter;
+
+        
+        
+        
+        public PlayerObject(Game game, SpriteBatch sB, World mW):base(game,sB,mW)
         {
             position = new Vector2(10, 10);
-
+            PixelsPerMeter = CosmicCurling.MeterInPixels;
+            
         }
+        
+
 
         protected override void LoadContent()
         {
 
+
             texture = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
+            origin = new Vector2(texture.Width / 2f, texture.Height / 2f);
+
+            position = new Vector2(200, 100);
+
+                     // Create the circle fixture
+           
+            circleBody = BodyFactory.CreateCircle( myWorld , texture.Width / (2f * PixelsPerMeter),1f, position/PixelsPerMeter);
+
+
+            circleBody.BodyType = BodyType.Dynamic;
+
+            // Give it some bounce and friction
+            circleBody.Restitution = 0.3f;
+            circleBody.Friction = 0.1f;
+
+
+
+
+            
+        //    circleBody.Position = position / PixelsPerMeter;
+
 
             //base.LoadContent();
         }
@@ -37,15 +73,28 @@ namespace CosmicCurling
 
         public override void Update(GameTime gameTime)
         {
-            position += position * 0.05f;
+        //    position += position * 0.05f;
+
+
+
+            position = circleBody.Position * PixelsPerMeter;
+
 
             base.Update(gameTime);
+            
         }
+
+
+
 
         public override void Draw(GameTime gameTime)
         {
 
-            spriteBatch.Draw(texture, position, Color.White);
+        //    spriteBatch.Draw(texture, position, Color.White);
+
+
+            spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1f, SpriteEffects.None, 0f);
+
 
             base.Draw(gameTime);
         }

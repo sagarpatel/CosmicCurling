@@ -23,7 +23,7 @@ namespace CosmicCurling
         
         
 
-        public MainMenu(Game game, SpriteBatch spriteB):base(game,spriteB)
+        public MainMenu(Game game, SpriteBatch sB):base(game,sB)
         {
 
             int b = 8;
@@ -47,7 +47,7 @@ namespace CosmicCurling
                 //int x = spriteBatch.GraphicsDevice.Viewport.Height;
                 //x = testex.Height;
                 
-                spriteBatch.Draw(testex, new Vector2(100, 100), Color.White);
+             //   spriteBatch.Draw(testex, new Vector2(100, 100), Color.White);
 
                 base.Draw(gameTime);
             }

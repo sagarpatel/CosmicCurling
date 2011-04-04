@@ -10,6 +10,10 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Input.Touch;
 using Microsoft.Xna.Framework.Media;
 
+using FarseerPhysics.Dynamics;
+
+
+
 namespace CosmicCurling
 {
 
@@ -25,7 +29,7 @@ namespace CosmicCurling
         public Vector2 position;
         public Vector2 velocity;
 
-        public Vector2 center;
+        public Vector2 origin;
         public float radius;
 
         public float speed;
@@ -36,9 +40,9 @@ namespace CosmicCurling
 
         public Rectangle rect;
 
+        public World myWorld;
 
-
-        public GameObject(Game game, SpriteBatch sB ):base(game)
+        public GameObject(Game game, SpriteBatch sB, World mW  ):base(game)
         {
             spriteBatch = sB;
 
@@ -47,6 +51,10 @@ namespace CosmicCurling
             isAlive = false;
             position = new Vector2(0, 0);
             velocity = new Vector2(0, 0);
+
+            origin = new Vector2(0, 0);
+
+            myWorld = mW;
 
         }
 
