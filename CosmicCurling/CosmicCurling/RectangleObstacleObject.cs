@@ -63,6 +63,7 @@ namespace CosmicCurling
         {
 
             position = rectangleBody.Position * PixelsPerMeter;
+            rotation = rectangleBody.Rotation;
 
             base.Update(gameTime);
 

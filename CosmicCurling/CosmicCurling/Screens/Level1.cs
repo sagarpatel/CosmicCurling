@@ -28,7 +28,7 @@ namespace CosmicCurling
 
         Texture2D tex;
        
-        RectangleObstacleObject obs1;
+        public RectangleObstacleObject obs1;
 
 
         public Level1(Game game, SpriteBatch sB,World mW):base(game,sB,mW)
