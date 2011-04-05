@@ -9,6 +9,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
+using FarseerPhysics.Dynamics;
+
 
 namespace CosmicCurling
 {
@@ -19,23 +21,23 @@ namespace CosmicCurling
     {
 
 
-        MainMenu mainMenu;
-        Level1 level1Screen;
+        public MainMenu mainMenu;
+        public Level1 level1Screen;
 
 
 
-        public ScreenManager(Game game, SpriteBatch spriteBatch): base(game)
+        public ScreenManager(Game game, SpriteBatch spriteBatch, World mW): base(game)
         {
             
             // TODO: Construct any child components here
 
             mainMenu = new MainMenu(game,spriteBatch);
-            level1Screen = new Level1(game, spriteBatch);
+            level1Screen = new Level1(game, spriteBatch,mW);
           //  mainMenu.LoadContent();
             game.Components.Add(mainMenu);
             game.Components.Add(level1Screen);
 
-            game.Components.Remove(level1Screen);
+         //   game.Components.Remove(level1Screen);
 
         }
 

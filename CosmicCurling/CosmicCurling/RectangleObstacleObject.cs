@@ -21,51 +21,39 @@ namespace CosmicCurling
 
 
 
-    public class PlayerObject:GameObject
+    public class RectangleObstacleObject : GameObject
     {
 
-        public Body circleBody;
+        public Body rectangleBody;
 
-         float PixelsPerMeter;
+        float PixelsPerMeter;
 
-        
-        
-        
-        public PlayerObject(Game game, SpriteBatch sB, World mW):base(game,sB,mW)
+
+        public RectangleObstacleObject(Game game, SpriteBatch sB, World mW):base(game,sB,mW)
         {
             position = new Vector2(10, 10);
             PixelsPerMeter = CosmicCurling.MeterInPixels;
-            
+
+
         }
-        
 
 
         protected override void LoadContent()
         {
 
-
-            texture = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
+            texture = Game.Content.Load<Texture2D>("Sprites/Brick_200x50_Side");
             origin = new Vector2(texture.Width / 2f, texture.Height / 2f);
 
-            position = new Vector2(200, 100);
+            position = new Vector2(200, 600);
 
-                     // Create the circle fixture
-           
-            circleBody = BodyFactory.CreateCircle( myWorld , texture.Width / (2f * PixelsPerMeter),1f, position/PixelsPerMeter);
+            // Create the circle fixture
 
-
-            circleBody.BodyType = BodyType.Dynamic;
+            rectangleBody = BodyFactory.CreateRectangle(myWorld, texture.Width /PixelsPerMeter, texture.Height/PixelsPerMeter, 1f, position/PixelsPerMeter);
+            rectangleBody.BodyType = BodyType.Static;
 
             // Give it some bounce and friction
-            circleBody.Restitution = 1;
-            circleBody.Friction = 0.1f;
-
-
-
-
-            
-        //    circleBody.Position = position / PixelsPerMeter;
-
+            rectangleBody.Restitution = 0.3f;
+            rectangleBody.Friction = 0.1f;
 
             //base.LoadContent();
         }
@@ -73,15 +61,11 @@ namespace CosmicCurling
 
         public override void Update(GameTime gameTime)
         {
-        //    position += position * 0.05f;
 
-
-
-            position = circleBody.Position * PixelsPerMeter;
-
+            position = rectangleBody.Position * PixelsPerMeter;
 
             base.Update(gameTime);
-            
+
         }
 
 
@@ -90,19 +74,21 @@ namespace CosmicCurling
         public override void Draw(GameTime gameTime)
         {
 
-        //    spriteBatch.Draw(texture, position, Color.White);
-
-
             spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1f, SpriteEffects.None, 0f);
 
 
             base.Draw(gameTime);
         }
 
+
+
+
+
+
+
+
+
     }
-
-
-
 
 
 

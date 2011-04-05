@@ -55,7 +55,7 @@ namespace CosmicCurling
             // TODO: Add your initialization logic here
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            screenManager = new ScreenManager(this, spriteBatch);
+            screenManager = new ScreenManager(this, spriteBatch,myWorld);
 
 
             player1 = new PlayerObject(this, spriteBatch, myWorld);
@@ -95,7 +95,7 @@ namespace CosmicCurling
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
             {
 
-
+             //   Components.Remove(screenManager.level1Screen);
                 
 
                 // this.Exit();

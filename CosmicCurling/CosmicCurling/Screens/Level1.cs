@@ -27,9 +27,14 @@ namespace CosmicCurling
 
 
         Texture2D tex;
+       
+        RectangleObstacleObject obs1;
 
-        public Level1(Game game, SpriteBatch sB):base(game,sB)
+
+        public Level1(Game game, SpriteBatch sB,World mW):base(game,sB,mW)
         {
+
+            obs1 = new RectangleObstacleObject(game, sB, mW);
             
         }
 
@@ -40,6 +45,7 @@ namespace CosmicCurling
 
             //   base.LoadContent();
 
+            Game.Components.Add(obs1);
             isLoaded = true;
         }
 

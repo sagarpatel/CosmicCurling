@@ -24,15 +24,15 @@ namespace CosmicCurling
     public abstract class GamePlayerScreenAbstract: ScreenAbstract
     {
 
-        
 
+        protected World myWorld;
        
 
 
-        public GamePlayerScreenAbstract(Game game, SpriteBatch sB):base(game,sB)
+        public GamePlayerScreenAbstract(Game game, SpriteBatch sB, World mW):base(game,sB)
         {
-            
-            
+
+            myWorld = mW;
 
         }
 
