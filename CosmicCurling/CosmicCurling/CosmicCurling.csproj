@@ -88,6 +88,7 @@
     <Compile Include="Objects\GameObject.cs" />
     <Compile Include="Managers\InputManager.cs" />
     <Compile Include="Objects\RectangleObstacleObject.cs" />
+    <Compile Include="Objects\WallObject.cs" />
     <Compile Include="Screens\GamePlayScreenAbstract.cs" />
     <Compile Include="Screens\Level1.cs" />
     <Compile Include="Screens\MainMenu.cs" />

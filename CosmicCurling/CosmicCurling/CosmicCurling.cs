@@ -97,10 +97,14 @@ namespace CosmicCurling
 
              //   Components.Remove(screenManager.level1Screen);
                 screenManager.level1Screen.obs1.rectangleBody.Rotation += 10;
+            
+                
 
-                // this.Exit();
+               // this.Exit();
 
             }
+
+
 
 
             myWorld.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);

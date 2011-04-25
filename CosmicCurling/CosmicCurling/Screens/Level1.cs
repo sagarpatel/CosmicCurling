@@ -30,12 +30,24 @@ namespace CosmicCurling
        
         public RectangleObstacleObject obs1;
 
+        public WallObject TopWall;
+        public WallObject RightWall;
+        public WallObject BottomWall;
+        public WallObject LeftWall;
+
+
 
         public Level1(Game game, SpriteBatch sB,World mW):base(game,sB,mW)
         {
 
             obs1 = new RectangleObstacleObject(game, sB, mW);
-            
+
+            TopWall = new WallObject(game, sB, mW, 1);
+            RightWall = new WallObject(game, sB, mW, 2);
+            BottomWall = new WallObject(game, sB, mW, 3);
+            LeftWall = new WallObject(game, sB, mW, 4);
+
+
         }
 
 
@@ -46,6 +58,12 @@ namespace CosmicCurling
             //   base.LoadContent();
 
             Game.Components.Add(obs1);
+
+            Game.Components.Add(TopWall);
+            Game.Components.Add(RightWall);
+            Game.Components.Add(BottomWall);
+            Game.Components.Add(LeftWall);
+
             isLoaded = true;
         }
 

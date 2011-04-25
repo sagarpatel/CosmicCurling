@@ -76,8 +76,16 @@ namespace CosmicCurling
         //    position += position * 0.05f;
 
 
+            MouseState ms = Mouse.GetState();
+            if (ms.LeftButton == ButtonState.Pressed)
+            {
+                circleBody.Position = new Vector2(ms.X, ms.Y)/PixelsPerMeter;
+            }
+
 
             position = circleBody.Position * PixelsPerMeter;
+
+
 
 
             base.Update(gameTime);
