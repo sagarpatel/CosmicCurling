@@ -22,7 +22,7 @@ namespace CosmicCurling
 {
 
 
-    public class Level1: GamePlayerScreenAbstract
+    public class Level1: GamePlayScreenAbstract
     {
 
 

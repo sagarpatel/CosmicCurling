@@ -21,7 +21,7 @@ namespace CosmicCurling
 {
 
 
-    public abstract class GamePlayerScreenAbstract: ScreenAbstract
+    public abstract class GamePlayScreenAbstract: ScreenAbstract
     {
 
 
@@ -29,7 +29,7 @@ namespace CosmicCurling
        
 
 
-        public GamePlayerScreenAbstract(Game game, SpriteBatch sB, World mW):base(game,sB)
+        public GamePlayScreenAbstract(Game game, SpriteBatch sB, World mW):base(game,sB)
         {
 
             myWorld = mW;
