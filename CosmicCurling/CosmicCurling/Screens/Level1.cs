@@ -53,7 +53,7 @@ namespace CosmicCurling
 
         protected override void LoadContent()
         {
-            tex = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
+           // tex = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
 
             //   base.LoadContent();
 
