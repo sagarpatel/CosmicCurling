@@ -43,7 +43,7 @@ namespace CosmicCurling
             graphics.PreferredBackBufferWidth = 480;
             graphics.PreferredBackBufferHeight = 800;
 
-            myWorld = new World(new Vector2(0, 10));
+            myWorld = new World(new Vector2(0, 0));
 
             
 
@@ -60,12 +60,15 @@ namespace CosmicCurling
             TextureManager.SharedTextureManager.addTexture("stone", Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64"));
             TextureManager.SharedTextureManager.addTexture("rectObs",Content.Load<Texture2D>("Sprites/Brick_200x50_Side"));
 
+            InputManager.myGame = this;
+
             screenManager = new ScreenManager(this, spriteBatch,myWorld);
 
 
             player1 = new PlayerObject(this, spriteBatch, myWorld);
 
             Components.Add(screenManager);
+            Components.Add(InputManager.sharedInputManager);
             Components.Add(player1);
             
 

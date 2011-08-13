@@ -1,10 +1,10 @@
-﻿<xapCache source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="13/08/2011 1:37:30 AM">
+﻿<xapCache source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="13/08/2011 3:32:19 PM">
   <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\Background.png" archivePath="Background.png" lastWriteTime="09/08/2011 10:42:12 PM" />
   <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\GameThumbnail.png" archivePath="GameThumbnail.png" lastWriteTime="09/08/2011 10:42:12 PM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="09/08/2011 10:52:58 PM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="09/08/2011 10:52:58 PM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.dll" archivePath="CosmicCurling.dll" lastWriteTime="13/08/2011 1:37:29 AM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll" archivePath="FarseerPhysicsXNA.dll" lastWriteTime="09/08/2011 10:51:21 PM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Curling_ Ball_Green_64.xnb" archivePath="Content\Sprites\Curling_ Ball_Green_64.xnb" lastWriteTime="09/08/2011 10:52:57 PM" />
-  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Brick_200x50_Side.xnb" archivePath="Content\Sprites\Brick_200x50_Side.xnb" lastWriteTime="09/08/2011 11:03:34 PM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="13/08/2011 4:33:03 AM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="13/08/2011 4:33:03 AM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.dll" archivePath="CosmicCurling.dll" lastWriteTime="13/08/2011 3:32:18 PM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll" archivePath="FarseerPhysicsXNA.dll" lastWriteTime="13/08/2011 1:23:09 PM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Curling_ Ball_Green_64.xnb" archivePath="Content\Sprites\Curling_ Ball_Green_64.xnb" lastWriteTime="13/08/2011 4:33:03 AM" />
+  <file source="E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Brick_200x50_Side.xnb" archivePath="Content\Sprites\Brick_200x50_Side.xnb" lastWriteTime="13/08/2011 4:33:03 AM" />
 </xapCache>

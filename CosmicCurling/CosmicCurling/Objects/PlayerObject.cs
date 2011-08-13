@@ -76,20 +76,31 @@ namespace CosmicCurling
         //    position += position * 0.05f;
 
 
-            MouseState ms = Mouse.GetState();
-            if (ms.LeftButton == ButtonState.Pressed)
+            //MouseState ms = Mouse.GetState();
+            //if (ms.LeftButton == ButtonState.Pressed)
+            //{
+            //    circleBody.Position = new Vector2(ms.X, ms.Y)/PixelsPerMeter;
+            //}
+
+            Vector2 deltaFlick = InputManager.sharedInputManager.getDeltaFlick();
+
+            if (deltaFlick.Length() > 1)
             {
-                circleBody.Position = new Vector2(ms.X, ms.Y)/PixelsPerMeter;
+                applyFlick(deltaFlick);
             }
 
 
             position = circleBody.Position * PixelsPerMeter;
 
 
-
-
             base.Update(gameTime);
             
+        }
+
+        public void applyFlick(Vector2 delta)
+        {
+            circleBody.ApplyLinearImpulse(delta*0.001f);
+
         }
 
 
