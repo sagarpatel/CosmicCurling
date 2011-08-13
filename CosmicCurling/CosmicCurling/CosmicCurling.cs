@@ -62,7 +62,10 @@ namespace CosmicCurling
 
             InputManager.myGame = this;
 
-            screenManager = new ScreenManager(this, spriteBatch,myWorld);
+            ScreenManager.myGame = this;
+            ScreenManager.mySpriteBatch = spriteBatch;
+            ScreenManager.myWorld = myWorld;
+            ScreenManager.sharedScreenManager.manualInit();
 
 
             player1 = new PlayerObject(this, spriteBatch, myWorld);
@@ -105,14 +108,9 @@ namespace CosmicCurling
 
              //   Components.Remove(screenManager.level1Screen);
                 screenManager.level1Screen.obs1.rectangleBody.Rotation += 10;
-            
-                
-
                // this.Exit();
 
             }
-
-
 
 
             myWorld.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);

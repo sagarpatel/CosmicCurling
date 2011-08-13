@@ -17,30 +17,35 @@ namespace CosmicCurling
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>
-    public class ScreenManager : Microsoft.Xna.Framework.GameComponent
+    public sealed class ScreenManager : Microsoft.Xna.Framework.GameComponent
     {
 
+        public static Game myGame;
+        public static SpriteBatch mySpriteBatch;
+        public static World myWorld;
+        private static readonly ScreenManager instance = new ScreenManager(myGame, mySpriteBatch, myWorld);
 
         public MainMenu mainMenu;
         public Level1 level1Screen;
 
 
 
-        public ScreenManager(Game game, SpriteBatch spriteBatch, World mW): base(game)
+        private ScreenManager(Game game, SpriteBatch spriteBatch, World mW): base(game)
         {
             
             // TODO: Construct any child components here
 
-            mainMenu = new MainMenu(game,spriteBatch);
-            level1Screen = new Level1(game, spriteBatch,mW);
-          //  mainMenu.LoadContent();
-            game.Components.Add(mainMenu);
-            game.Components.Add(level1Screen);
-
-         //   game.Components.Remove(level1Screen);
+    
 
         }
 
+        public static ScreenManager sharedScreenManager
+        {
+            get
+            {
+                return instance;
+            }
+        }
 
 
 
@@ -64,7 +69,16 @@ namespace CosmicCurling
         }
 
 
+        public void manualInit()
+        {
+            mainMenu = new MainMenu(myGame, mySpriteBatch);
+            level1Screen = new Level1(myGame, mySpriteBatch, myWorld);
+            //  mainMenu.LoadContent();
+            myGame.Components.Add(mainMenu);
+            myGame.Components.Add(level1Screen);
 
+            //   game.Components.Remove(level1Screen);
+        }
 
 
 

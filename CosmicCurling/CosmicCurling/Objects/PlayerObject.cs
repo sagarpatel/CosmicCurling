@@ -38,19 +38,17 @@ namespace CosmicCurling
             
         }
         
-
+// Inherited functions
 
         protected override void LoadContent()
         {
-
 
             texture = TextureManager.SharedTextureManager.getTexture("stone");
             origin = new Vector2(texture.Width / 2f, texture.Height / 2f);
 
             position = new Vector2(200, 100);
 
-                     // Create the circle fixture
-           
+            // Create the circle fixture
             circleBody = BodyFactory.CreateCircle( myWorld , texture.Width / (2f * PixelsPerMeter),1f, position/PixelsPerMeter);
 
 
@@ -61,26 +59,12 @@ namespace CosmicCurling
             circleBody.Friction = 0.1f;
 
 
-
-
-            
-        //    circleBody.Position = position / PixelsPerMeter;
-
-
-            //base.LoadContent();
+            base.LoadContent();
         }
 
 
         public override void Update(GameTime gameTime)
         {
-        //    position += position * 0.05f;
-
-
-            //MouseState ms = Mouse.GetState();
-            //if (ms.LeftButton == ButtonState.Pressed)
-            //{
-            //    circleBody.Position = new Vector2(ms.X, ms.Y)/PixelsPerMeter;
-            //}
 
             Vector2 deltaFlick = InputManager.sharedInputManager.getDeltaFlick();
 
@@ -97,26 +81,28 @@ namespace CosmicCurling
             
         }
 
-        public void applyFlick(Vector2 delta)
-        {
-            circleBody.ApplyLinearImpulse(delta*0.001f);
-
-        }
-
-
 
 
         public override void Draw(GameTime gameTime)
         {
 
         //    spriteBatch.Draw(texture, position, Color.White);
-
-
             spriteBatch.Draw(texture, position, null, Color.White, rotation, origin, 1f, SpriteEffects.None, 0f);
-
 
             base.Draw(gameTime);
         }
+
+
+
+// Custom functions
+
+        public void applyFlick(Vector2 delta)
+        {
+            circleBody.ApplyLinearImpulse(delta * 0.001f);
+
+        }
+
+
 
     }
 
