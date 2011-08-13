@@ -13,14 +13,27 @@ using Microsoft.Xna.Framework.Media;
 
 namespace CosmicCurling
 {
-    public class GameFlowManager : Microsoft.Xna.Framework.GameComponent
+    public sealed class GameFlowManager : Microsoft.Xna.Framework.GameComponent
     {
+        public static Game myGame;
+        private static readonly GameFlowManager instance = new GameFlowManager(myGame);
 
 
-        public GameFlowManager(Game game):base(game)
+        private GameFlowManager(Game game):base(game)
         {
 
         }
+
+
+        public static GameFlowManager sharedGameFlowManager
+        {
+            get
+            {
+                return instance;
+            }
+        }
+
+
 
 
     }
