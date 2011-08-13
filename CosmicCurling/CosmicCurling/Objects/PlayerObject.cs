@@ -44,7 +44,7 @@ namespace CosmicCurling
         {
 
 
-            texture = Game.Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64");
+            texture = TextureManager.SharedTextureManager.getTexture("stone");
             origin = new Vector2(texture.Width / 2f, texture.Height / 2f);
 
             position = new Vector2(200, 100);

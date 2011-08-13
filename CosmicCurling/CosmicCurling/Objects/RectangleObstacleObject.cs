@@ -41,7 +41,7 @@ namespace CosmicCurling
         protected override void LoadContent()
         {
 
-            texture = Game.Content.Load<Texture2D>("Sprites/Brick_200x50_Side");
+            texture = TextureManager.SharedTextureManager.getTexture("rectObs");
             origin = new Vector2(texture.Width / 2f, texture.Height / 2f);
 
             position = new Vector2(200, 600);

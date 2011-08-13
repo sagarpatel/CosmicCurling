@@ -1,0 +1,6 @@
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\bin\Windows Phone\Debug\FarseerPhysicsXNA.pdb
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\obj\Windows Phone\Debug\FarseerPhysicsXNA.dll
+E:\GameDev\Projects\XNA\CosmicCurling\Farseer Physics Engine 3.3 XNA\obj\Windows Phone\Debug\FarseerPhysicsXNA.pdb

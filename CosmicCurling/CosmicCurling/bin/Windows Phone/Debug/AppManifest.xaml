@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="CosmicCurling" EntryPointType="CosmicCurling.CosmicCurling" RuntimeVersion="3.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="CosmicCurling" Source="CosmicCurling.dll" />
+    <AssemblyPart x:Name="FarseerPhysicsXNA" Source="FarseerPhysicsXNA.dll" />
+  </Deployment.Parts>
+</Deployment>

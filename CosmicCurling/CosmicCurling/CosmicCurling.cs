@@ -45,6 +45,8 @@ namespace CosmicCurling
 
             myWorld = new World(new Vector2(0, 10));
 
+            
+
         }
 
 
@@ -54,6 +56,9 @@ namespace CosmicCurling
         {
             // TODO: Add your initialization logic here
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            TextureManager.SharedTextureManager.addTexture("stone", Content.Load<Texture2D>("Sprites/Curling_ Ball_Green_64"));
+            TextureManager.SharedTextureManager.addTexture("rectObs",Content.Load<Texture2D>("Sprites/Brick_200x50_Side"));
 
             screenManager = new ScreenManager(this, spriteBatch,myWorld);
 

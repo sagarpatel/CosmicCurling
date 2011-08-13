@@ -1,0 +1,22 @@
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Curling_ Ball_Green_64.xnb
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.dll
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.pdb
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\FarseerPhysicsXNA.dll
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\FarseerPhysicsXNA.pdb
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\ResolveAssemblyReference.cache
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\CosmicCurling.dll
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\CosmicCurling.pdb
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\AppManifest.xaml
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml.g
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\GameThumbnail.png
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.xap
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\XapCacheFile.xml
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\Content\Sprites\Brick_200x50_Side.xnb
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\CosmicCurling.xap
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\XapCacheFile.xml
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\bin\Windows Phone\Debug\AppManifest.xaml
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml.g
+E:\GameDev\Projects\XNA\CosmicCurling\CosmicCurling\CosmicCurling\obj\Windows Phone\Debug\WMAppManifest.xml
+bin\Windows Phone\Debug\GameThumbnail.png
