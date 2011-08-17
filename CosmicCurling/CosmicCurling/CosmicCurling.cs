@@ -107,7 +107,7 @@ namespace CosmicCurling
             {
 
              //   Components.Remove(screenManager.level1Screen);
-                screenManager.level1Screen.obs1.rectangleBody.Rotation += 10;
+                ScreenManager.sharedScreenManager.level1Screen.obs1.rectangleBody.Rotation += 10;
                // this.Exit();
 
             }
