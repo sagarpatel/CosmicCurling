@@ -22,12 +22,13 @@ namespace CosmicCurling
         public static Game myGame;
         private static readonly InputManager instance = new InputManager(myGame);
 
-        private Vector2 deltaFlick;
+        private Vector2 flickDelta;
+        private Vector2 tapPosition;
 
         private InputManager(Game game) : base(game)
         {
             // TODO: Construct any child components here
-            TouchPanel.EnabledGestures = GestureType.Flick;
+            TouchPanel.EnabledGestures = GestureType.Flick | GestureType.Tap;
 
         }
 
@@ -62,8 +63,13 @@ namespace CosmicCurling
                 switch (gs.GestureType)
                 {
                     case GestureType.Flick:
-                        HandleFlick( gs.Delta);
+                        handleFlick( gs.Delta);
                         break;
+
+                    case GestureType.Tap:
+                        handleTap(gs.Position);
+                        break;
+
                 }
             }
  
@@ -71,20 +77,44 @@ namespace CosmicCurling
         }
 
 
-        private void HandleFlick(Vector2 deltaF)
+        #region Custom functions
+
+
+
+        #region Private variable handlers
+        private void handleFlick(Vector2 deltaF)
         {
-            deltaFlick = deltaF;
+            flickDelta = deltaF;
         }
-
-
-        public Vector2 getDeltaFlick()
+        private void handleTap(Vector2 position)
         {
+            tapPosition = position;
+        }
+        #endregion
 
-            Vector2 temp = deltaFlick;
-            deltaFlick = new Vector2(0, 0);
+
+
+        #region Public variable getter functions
+        public Vector2 getFlickDelta()
+        {
+            Vector2 temp = flickDelta;
+            flickDelta = new Vector2(0, 0);
 
             return temp;
         }
+        public Vector2 getTapPosition()
+        {
+            Vector2 temp = tapPosition;
+            tapPosition = new Vector2(0, 0);
+
+            return temp;
+        }
+        #endregion
+
+
+
+        #endregion
+
 
 
     }

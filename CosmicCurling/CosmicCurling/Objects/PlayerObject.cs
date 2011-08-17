@@ -66,7 +66,7 @@ namespace CosmicCurling
         public override void Update(GameTime gameTime)
         {
 
-            Vector2 deltaFlick = InputManager.sharedInputManager.getDeltaFlick();
+            Vector2 deltaFlick = InputManager.sharedInputManager.getFlickDelta();
 
             if (deltaFlick.Length() > 1)
             {
